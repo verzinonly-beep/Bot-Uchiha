@@ -1,1 +1,4 @@
-export const errorMessages = { commandNotFound: (tempo, prefix) => `• *${tempo}*, o comando usado não foi encontrado!\n• Utilize *${prefix}menu* para visualizar meus comandos.`, noresult: () => `Desculpe, não consegui encontrar o que você procurava utilizando essa forma, pode tentar de outra maneira?`, error: () => `Desculpe, ocorreu um erro. Por favor, tente novamente mais tarde.`, floodCommands: () => `Espere *5s* para usar outro comando ou executar o mesmo...`, timeRequired: () => `Não é possível realizar download de áudios ou vídeos acima de *20 minutos*.`, bannedUser: () => `Você está impossibilitado de usar meus comandos! *Por favor, solicite o desbloqueio ao meu dono.*` }; export default errorMessages;
+// errors.js - Module for error handling
+module.exports = function errorHandler(error) {
+    console.error(`Error: ${error}`);
+};
